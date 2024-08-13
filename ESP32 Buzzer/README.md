@@ -27,7 +27,23 @@ For the 3D printed design:
 - electrical wires
 - female to male jumper cables (we will cut the ends to connect to the PCB)
 
-## 3D Printing
+## 3D case and soldering considerations
+
+The buzzer is intended for indoor use, we therefore do not need a waterproof design.
+<br/>
+However, we needed a design:
+
+- that made the RED led visible
+- did not obstruct the sound from the buzzer
+- hid the ESP32 board
+- left enough space for a long charging cable if necessary
+- was small enough to be discreet and stick around a door
+- did not obstruct the IR sensors but hid the connected board
+- the ESP32 board would be placed upside down in order to have the GPIO pins facing upwards, the PCB board facing downwards (to avoid cabled going in every direction, particularly over the PCB). The length of the cables might be an issue, but we could tidy them up afterwards with cable holders or by shortening them, soldering the ends and covering them with thermal duct.
+
+This time I decided to use Fusion 360 to design the case. Although my fusion skills aren't as good, the software is ideal for this kind of tight design and I wanted the learning experience.
+
+## 3D Printing instructions
 
 #TODO: complete
 
@@ -56,11 +72,14 @@ This is the prototype version of the circuit before it was soldered together on 
 
 **NOTE: you can calibrate the sensitivity of the IR sensor by turning the blue trim-post distance adjuster**
 
-#TODO: add PCB version
+Below is the soldered PCB version for reference. I did not solder the connections to the ESP32 GPIOs or the IR sensor GPIOs.
+![POC breadboard 2](images/pcb_1.jpg)
+![POC breadboard 2](images/pcb_2.jpg)
 
 ## Assembly
 
 #TODO: complete
+#TODO add to thingiverse (with pictures) once print and assembly complete
 
 ## Software
 
