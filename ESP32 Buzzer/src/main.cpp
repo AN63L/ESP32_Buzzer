@@ -8,12 +8,10 @@ int val = 0;
 
 void setup() {
   Serial.begin(115200);
-  // put your setup code here, to run once:
-  Serial.print("Hello!");
   pinMode(LED, OUTPUT); // ONBOARD PIN
   pinMode(RED, OUTPUT);  // RED LED PIN
   digitalWrite(RED, LOW); // RED LED OFF
-  pinMode(BUZZER, OUTPUT);  // RED LED PIN
+  pinMode(BUZZER, OUTPUT);  // Buzzer PIN
 }
 
 void loop() {
@@ -27,7 +25,6 @@ void loop() {
   val = digitalRead(IR_SENSOR); // IR Sensor output pin connected to D1  
   Serial.println(val);  // see the value in serial m0nitor in Arduino IDE  
   Serial.println();
-  // delay(100); // small reading delay
   if(val == 0){  
    digitalWrite(RED, HIGH); // RED LED ON
    digitalWrite(BUZZER, HIGH); // BUZZER ON
