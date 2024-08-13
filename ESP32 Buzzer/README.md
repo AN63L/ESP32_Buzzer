@@ -33,13 +33,15 @@ The buzzer is intended for indoor use, we therefore do not need a waterproof des
 <br/>
 However, we needed a design:
 
-- that made the RED led visible
-- did not obstruct the sound from the buzzer
-- hid the ESP32 board
-- left enough space for a long charging cable if necessary
-- was small enough to be discreet and stick around a door
-- did not obstruct the IR sensors but hid the connected board
+- that made the RED led visible.
+- did not obstruct the sound from the buzzer.
+- hid the ESP32 board.
+- left enough space for a long charging cable if necessary.
+- was small enough to be discreet and stick around a door.
+- did not obstruct the IR sensors but hid the connected board.
 - the ESP32 board would be placed upside down in order to have the GPIO pins facing upwards, the PCB board facing downwards (to avoid cabled going in every direction, particularly over the PCB). The length of the cables might be an issue, but we could tidy them up afterwards with cable holders or by shortening them, soldering the ends and covering them with thermal duct.
+- with an accessible lid: the calibration of the distance of the IR sensor should be flexible, based on where the final project is placed.
+- a removable lid: using magnets should keep the lid closed if the case ends up being upside down.
 
 This time I decided to use Fusion 360 to design the case. Although my fusion skills aren't as good, the software is ideal for this kind of tight design and I wanted the learning experience.
 
