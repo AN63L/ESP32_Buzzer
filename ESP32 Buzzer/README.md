@@ -34,16 +34,36 @@ The buzzer is intended for indoor use, we therefore do not need a waterproof des
 However, we needed a design:
 
 - that made the RED led visible.
-- did not obstruct the sound from the buzzer.
-- hid the ESP32 board.
-- left enough space for a long charging cable if necessary.
-- was small enough to be discreet and stick around a door.
-- did not obstruct the IR sensors but hid the connected board.
-- the ESP32 board would be placed upside down in order to have the GPIO pins facing upwards, the PCB board facing downwards (to avoid cabled going in every direction, particularly over the PCB). The length of the cables might be an issue, but we could tidy them up afterwards with cable holders or by shortening them, soldering the ends and covering them with thermal duct.
+- that did not obstruct the sound from the buzzer.
+- that hid the ESP32 board.
+- that left enough space for a long charging cable if necessary.
+- that was small enough to be discreet and stick around a door.
+- that did not obstruct the IR sensors but hid the connected board.
+- where the ESP32 board would be placed upside down in order to have the GPIO pins facing upwards, the PCB board facing downwards (to avoid cabled going in every direction, particularly over the PCB). The length of the cables might be an issue, but we could tidy them up afterwards with cable holders or by shortening them, soldering the ends and covering them with thermal duct.
 - with an accessible lid: the calibration of the distance of the IR sensor should be flexible, based on where the final project is placed.
-- a removable lid: using magnets should keep the lid closed if the case ends up being upside down.
+- with a removable lid: using magnets should keep the lid closed if the case ends up being upside down.
+- with a modular place for the sensor for flexibility
+- with a modular place for the esp32 board rotation for flexibility
 
-This time I decided to use Fusion 360 to design the case. Although my fusion skills aren't as good, the software is ideal for this kind of tight design and I wanted the learning experience.
+This time I decided to use Blender to design the case. Although Fusion 360 is a better tool solution for this kind of low-tolerance build, my experience with that tool wasn't sufficient to get a quick prototype working.
+
+The original sketches are available below.
+
+<img src="images/sketch_1.png" height="500" />
+<img src="images/sketch_2.png" height="500" />
+<img src="images/sketch_3.png" height="500" />
+<img src="images/sketch_4.png" height="500" />
+<img src="images/sketch_5.png" height="500" />
+<img src="images/sketch_6.png" height="500" />
+<img src="images/sketch_7.png" height="500" />
+
+<!-- ![Sketch 1](images/sketch_1.png)
+![Sketch 2](images/sketch_2.png)
+![Sketch 3](images/sketch_3.png)
+![Sketch 4](images/sketch_4.png)
+![Sketch 5](images/sketch_5.png)
+![Sketch 6](images/sketch_6.png)
+![Sketch 7](images/sketch_7.png) -->
 
 ## 3D Printing instructions
 
@@ -107,6 +127,8 @@ _There are comments in the code to help explain the key elements_
 ## Future improvements
 
 #TODO: complete
+
+- Improve the overall design of the case, preferable using software like Fusion 360.
 
 ## Useful links
 
