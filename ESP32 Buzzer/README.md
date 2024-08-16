@@ -26,6 +26,7 @@ For the 3D printed design:
 - [5x3mm magnets x 4](!https://www.amazon.fr/gp/product/B0C9WQYZ27/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 - electrical wires
 - female to male jumper cables (we will cut the ends to connect to the PCB)
+- SUNLU PLA
 
 ## 3D case and soldering considerations
 
@@ -49,25 +50,28 @@ This time I decided to use Blender to design the case. Although Fusion 360 is a 
 
 The original sketches are available below.
 
-<img src="images/sketch_1.png" height="500" />
-<img src="images/sketch_2.png" height="500" />
-<img src="images/sketch_3.png" height="500" />
-<img src="images/sketch_4.png" height="500" />
-<img src="images/sketch_5.png" height="500" />
-<img src="images/sketch_6.png" height="500" />
-<img src="images/sketch_7.png" height="500" />
-
-<!-- ![Sketch 1](images/sketch_1.png)
-![Sketch 2](images/sketch_2.png)
-![Sketch 3](images/sketch_3.png)
-![Sketch 4](images/sketch_4.png)
-![Sketch 5](images/sketch_5.png)
-![Sketch 6](images/sketch_6.png)
-![Sketch 7](images/sketch_7.png) -->
+<img src="images/sketch_1.jpg" height="500" />
+<img src="images/sketch_2.jpg" height="500" />
+<img src="images/sketch_3.jpg" height="500" />
 
 ## 3D Printing instructions
 
-#TODO: complete
+The files to 3D print are available in `.stl` format in the "3d" folder. There are two parts to this print: the main case and the lid.
+
+I printed the case in PLA but it can easily be printed in ABS or PETG too. The below settings apply to PLA (from SUNLU).
+
+The lid should be printed with the holes facing upwards to avoid having to fill them and remove the supports.
+
+Infill: 20%
+Print speed: 80mm/s
+Support pattern: Gyroid
+Support: everywhere, line pattern
+Nozzle temperature: 210 degrees Celsius
+Bed temperature: 60 degrees Celsius
+
+Removing the supports once the print is completed can be tricky, I recommend you start with the outside-facing supports and move inwards.
+
+The total print time was 8h24m with approximately 82g (Cura slicer indicator) of filament.
 
 ## Wiring
 
@@ -126,7 +130,7 @@ _There are comments in the code to help explain the key elements_
 
 ## Future improvements
 
-#TODO: complete
+- Rounded edges for the case (the current topology has to be updated, the bevel should have been applied before setting holes in the base structure)
 
 - Improve the overall design of the case, preferable using software like Fusion 360.
 
